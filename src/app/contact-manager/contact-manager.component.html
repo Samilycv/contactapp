@@ -1,0 +1,80 @@
+Login Details: {{loginDate|date:'short'}}
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="my-3">CONTACT MANAGEMENT APPLICATION</h1>
+            <p style="text-align: justify;">Contact management, a digital method of storing data, can help you grow and
+                diversify your customer base. As your business grows, it will get more challenging to collect data and
+                determine which information is valuable to you, your employees and your company’s sustainability.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-between">
+            <div>
+                <!-- search -->
+                <input (keyup)="search($event)" type="text" placeholder="Search Contact" class="form-control my-3">
+            </div>
+            <!-- add contact button -->
+            <button class="btn btn-outline-dark" routerLink="addContact">Add Contact</button>
+        </div>
+    </div>
+    <!-- string iterpolation -->
+    {{heading}}
+    <!-- {{allContacts|json}} -->
+    <div class="row">
+        <div class="col-6" *ngFor="let contact of allContacts |filter:searchKey:'name'">
+            <div class="card my-3">
+                <div class="row">
+                    <div class="col-6">
+                        <!-- image -->
+                        <img width="200px" height="200px"
+                            [src]="contact.photourl" alt="">
+                    </div>
+                    <div class="col-6">
+                        <!-- content -->
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Full Name</div>
+                                    {{contact.name}}
+                                </div>
+                                <!-- view -->
+                                <span class="badge bg-dark rounded-pill p-2">
+                                    <a routerLink="/contactManager/view/{{contact.id}}">
+                                        <i class="fa-sharp fa-solid fa-eye fa-fade text-light"></i>
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Phone Number</div>
+                                    {{contact.phone}}
+
+                                </div>
+                                <!-- edit -->
+                                <span class="badge bg-dark rounded-pill p-2">
+                                    <a routerLink="/contactManager/edit/{{contact.id}}">
+                                        <i class="fa-sharp fa-solid fa-pen fa-fade text-light"></i>
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Email</div>
+                                    {{contact.email}}
+
+                                </div>
+                                <!-- delete -->
+                                <button (click)="deleteContact(contact.id)" class="badge bg-dark rounded-pill p-2">
+                                    <a routerLink="">
+                                        <i class="fa-sharp fa-solid fa-trash fa-fade text-light"></i>
+                                    </a>
+                                </button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

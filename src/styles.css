@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Andika&family=Anton&family=Domine:wght@600&family=Hind+Siliguri&family=Orbitron:wght@400;600&family=Oswald:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@100;300;400;500;600&family=Roboto:ital,wght@0,400;1,100&family=Sigmar&family=Teko:wght@300&display=swap');
+h1{
+    font-family: 'Orbitron', sans-serif;
+}
+h3{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}

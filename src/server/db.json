@@ -1,0 +1,58 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Nihal",
+      "email": "anum@gmail.com",
+      "phone": "8745663217",
+      "photourl": "https://w7.pngwing.com/pngs/306/70/png-transparent-computer-icons-management-admin-silhouette-black-and-white-neck-thumbnail.png",
+      "company": "Infosys",
+      "title": "Senior Developer",
+      "GroupId": "2"
+    },
+    {
+      "id": 2,
+      "name": "Meera",
+      "email": "meera@gmail.com",
+      "phone": "7841256398",
+      "photourl": "https://png.pngtree.com/png-vector/20221124/ourmid/pngtree-recruitment-job-for-social-media-admin-png-image_6478542.png",
+      "company": "TCS",
+      "title": "Junior Developer",
+      "GroupId": "3"
+    },
+    {
+      "id": 3,
+      "name": "Arun m",
+      "email": "arunm@gmail.com",
+      "phone": "6987456321",
+      "photourl": "https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg",
+      "company": "Infosys",
+      "title": "Senior Developer",
+      "GroupId": "2"
+    },
+    {
+      "id": 4,
+      "name": "Midum M",
+      "email": "midunm@gmail.com",
+      "phone": "8754129863",
+      "photourl": "https://images.freeimages.com/fic/images/icons/573/must_have/256/user.png",
+      "company": "UST",
+      "title": "Junior Developer",
+      "GroupId": "1"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Company"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Friends"
+    }
+  ]
+}
